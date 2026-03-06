@@ -1,0 +1,207 @@
+{
+  "books": [
+    {
+      "id": "BMH_001",
+      "file": "/LIBRARY/BMH_001.pdf",
+      "title": "Reina-Valera Actualizada - Antiguo Testamento",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_002",
+      "file": "/LIBRARY/BMH_002.pdf",
+      "title": "Reina-Valera Actualizada - Nuevo Testamento",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_003",
+      "file": "/LIBRARY/BMH_003.pdf",
+      "title": "Santa Biblia Versión Internacional - Antiguo Testamento",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_004",
+      "file": "/LIBRARY/BMH_004.pdf",
+      "title": "Santa Biblia Nueva Versión Internacional - Nuevo Testamento",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_005",
+      "file": "/LIBRARY/BMH_005.pdf",
+      "title": "Diccionario Biblico - A-M",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_006",
+      "file": "/LIBRARY/BMH_006.pdf",
+      "title": "Diccionario Biblico - N-Z",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_007",
+      "file": "/LIBRARY/BMH_007.pdf",
+      "title": "Nuevo Comentario Biblico - Antiguo Testamento",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_008",
+      "file": "/LIBRARY/BMH_008.pdf",
+      "title": "Nuevo Comentario Biblico - Nuevo Testamento",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_009",
+      "file": "/LIBRARY/BMH_009.pdf",
+      "title": "La Geografia Biblica",
+      "category": "estudio",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_010",
+      "file": "/LIBRARY/BMH_010.pdf",
+      "title": "La Biblia y su Interpretacion",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_011",
+      "file": "/LIBRARY/BMH_011.pdf",
+      "title": "Concordancia Temática de la Biblia",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_012",
+      "file": "/LIBRARY/BMH_012.pdf",
+      "title": "Comó Enseñar la Biblia",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_013",
+      "file": "/LIBRARY/BMH_013.pdf",
+      "title": "El Sermón Eficaz",
+      "category": "predicacion",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_014",
+      "file": "/LIBRARY/BMH_014.pdf",
+      "title": "Bosquejos de Sermones Selectos",
+      "category": "predicacion",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_015",
+      "file": "/LIBRARY/BMH_015.pdf",
+      "title": "500 Ilustraciones",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_016",
+      "file": "/LIBRARY/BMH_016.pdf",
+      "title": "Compendio de la Historia Cristiana",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_017",
+      "file": "/LIBRARY/BMH_017.pdf",
+      "title": "Donctrina Cristiana",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_018",
+      "file": "/LIBRARY/BMH_018.pdf",
+      "title": "Manual de eclesiología",
+      "category": "pastoral",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_019",
+      "file": "/LIBRARY/BMH_019.pdf",
+      "title": "El Ministerio de Pastor Consejero",
+      "category": "pastoral",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_020",
+      "file": "/LIBRARY/BMH_020.pdf",
+      "title": "El Cuidado Pastoral",
+      "category": "pastoral",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_021",
+      "file": "/LIBRARY/BMH_021.pdf",
+      "title": "Circulos Concentricos",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_022",
+      "file": "/LIBRARY/BMH_022.pdf",
+      "title": "El Matrimono y la Familia en la Vida Cristiana",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_023",
+      "file": "/LIBRARY/BMH_023.pdf",
+      "title": "Orientaciones Practicas para Visitar Enfermos",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_024",
+      "file": "/LIBRARY/BMH_024.pdf",
+      "title": "El Modelo de Antioquia",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_025",
+      "file": "/LIBRARY/BMH_025.pdf",
+      "title": "Prioridades en el Ministerio",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_026",
+      "file": "/LIBRARY/BMH_026.pdf",
+      "title": "La Biblia al Minuto",
+      "category": "biblia",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_027",
+      "file": "/LIBRARY/BMH_027.pdf",
+      "title": "Cómo Planificar los Cultos de Adoración",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_028",
+      "file": "/LIBRARY/BMH_028.pdf",
+      "title": "La Adoración que Agrada al Altísimo",
+      "category": "otro",
+      "excerpt": ""
+    },
+    {
+      "id": "BMH_029",
+      "file": "/LIBRARY/BMH_029.pdf",
+      "title": "Que mi Pueblo Adore",
+      "category": "otro",
+      "excerpt": ""
+    }
+  ]
+}
