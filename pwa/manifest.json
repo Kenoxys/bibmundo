@@ -2,8 +2,8 @@
   "name": "Biblioteca Mundo Hispano",
   "short_name": "BibMundo",
   "description": "Catálogo de recursos bíblicos en español. Funciona offline como PWA.",
-  "start_url": "/pwa/index.html",
-  "scope": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "lang": "es",
   "dir": "ltr",
   "orientation": "portrait",
@@ -13,25 +13,25 @@
   "theme_color": "#005a9c",
   "icons": [
     {
-      "src": "/pwa/icons/favicon-96x96.png",
+      "src": "./icons/favicon-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/pwa/icons/web-app-manifest-192x192.png",
+      "src": "./icons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/pwa/icons/web-app-manifest-512x512.png",
+      "src": "./icons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/pwa/icons/apple-touch-icon.png",
+      "src": "./icons/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"

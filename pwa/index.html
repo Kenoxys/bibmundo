@@ -12,21 +12,21 @@
   <title>Biblioteca Mundo Hispano</title>
 
   <!-- PDF.js para visualizar PDFs (modo offline) -->
-  <script src="/pwa/lib/pdf.min.js"></script>
-  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = '/pwa/lib/pdf.worker.min.js';</script>
+  <script src="./lib/pdf.min.js"></script>
+  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = './lib/pdf.worker.min.js';</script>
 
   <!-- Manifest PWA -->
-  <link rel="manifest" href="/pwa/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   
   <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="96x96" href="/pwa/icons/favicon-96x96.png">
-  <link rel="icon" type="image/x-icon" href="/pwa/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+  <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
   
   <!-- Apple Touch Icon (iOS) -->
-  <link rel="apple-touch-icon" href="/pwa/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   
   <!-- Estilos -->
-  <link rel="stylesheet" href="/pwa/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="app-header">
@@ -90,6 +90,6 @@
     <span>Funciona offline. Usa el botón "Instalar" si está disponible.</span>
   </footer>
 
-  <script type="module" src="/pwa/app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>

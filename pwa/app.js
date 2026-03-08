@@ -316,7 +316,7 @@ async function loadLibrary() {
       return;
     }
 
-    const resp = await fetch('/pwa/library.json');
+    const resp = await fetch('./library.json');
     if (!resp.ok) throw new Error('No se pudo cargar library.json');
     
     const data = await resp.json();
@@ -334,7 +334,7 @@ async function loadLibrary() {
 async function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     try {
-      const reg = await navigator.serviceWorker.register('/pwa/sw.js');
+      const reg = await navigator.serviceWorker.register('./sw.js');
       console.log('Service Worker registrado:', reg.scope);
     } catch (err) {
       console.warn('No se pudo registrar Service Worker:', err);

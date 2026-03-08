@@ -1,7 +1,7 @@
 const CACHE_NAME = 'bibmundo-cache-v2';
 
-// La app está en /pwa/
-const BASE = '/pwa/';
+// La app usa rutas relativas
+const BASE = './';
 
 const ASSETS = [
   BASE,
