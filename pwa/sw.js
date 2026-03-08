@@ -1,9 +1,7 @@
-const CACHE_NAME = 'bibmundo-cache-v1';
+const CACHE_NAME = 'bibmundo-cache-v2';
 
-// Calcula la base de la PWA según la ubicación del Service Worker.
-// Esto permite que la misma app funcione bajo /pwa/ o raíz.
-let BASE = self.location.pathname.replace(/\/sw\.js$/, '');
-if (!BASE.endsWith('/')) BASE += '/';
+// La app está en /pwa/
+const BASE = '/pwa/';
 
 const ASSETS = [
   BASE,
@@ -11,8 +9,15 @@ const ASSETS = [
   BASE + 'styles.css',
   BASE + 'app.js',
   BASE + 'manifest.json',
+  BASE + 'library.json',
   BASE + 'icons/icon.svg',
-  BASE + 'library.json'
+  BASE + 'icons/favicon-96x96.png',
+  BASE + 'icons/web-app-manifest-192x192.png',
+  BASE + 'icons/web-app-manifest-512x512.png',
+  BASE + 'icons/apple-touch-icon.png',
+  BASE + 'icons/favicon.ico',
+  BASE + 'lib/pdf.min.js',
+  BASE + 'lib/pdf.worker.min.js'
 ];
 
 self.addEventListener('install', event => {
@@ -32,23 +37,23 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  // Offline-first: intenta servir desde cache, luego red y luego caché de recursos por separado
+  // Offline-first: intenta servir desde cache, luego red
   event.respondWith(
     caches.match(event.request).then(cached => {
       if (cached) return cached;
       return fetch(event.request)
         .then(response => {
-          // caché de recursos estáticos adicionales si se obtienen con éxito
-          if (event.request.method === 'GET' && response.status === 200 && response.type === 'basic') {
+          // Caché de recursos estáticos adicionales si son exitosos
+          if (event.request.method === 'GET' && response.status === 200) {
             const clone = response.clone();
             caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
           }
           return response;
         })
         .catch(() => {
-          // Si no se puede conectar y no está en cache, intentar respuesta offline genérica
+          // Si no hay conexión y no está en cache, responder con página offline
           if (event.request.destination === 'document') {
-            return caches.match('/index.html');
+            return caches.match(BASE + 'index.html');
           }
         });
     })
