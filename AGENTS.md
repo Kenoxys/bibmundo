@@ -22,10 +22,10 @@ This is a Progressive Web App (PWA) for a Spanish-language biblical resources li
 ### Local Development
 
 ```bash
-# Serve from project root (for /pwa/ paths)
+# Serve from project root (for /docs/ paths)
 python3 -m http.server 8000
 
-# Access at http://localhost:8000/pwa/
+# Access at http://localhost:8000/docs/
 ```
 
 ### Generate Library JSON
@@ -59,7 +59,7 @@ git push origin main
 ```
 .
 ├── AGENTS.md                    # This file
-├── pwa/                         # Web application
+├── docs/                        # Web application (served by GitHub Pages)
 │   ├── index.html              # Main HTML
 │   ├── app.js                  # Frontend logic
 │   ├── sw.js                   # Service Worker (offline support)
@@ -67,12 +67,12 @@ git push origin main
 │   ├── manifest.json           # PWA manifest
 │   ├── library.json            # Generated catalog
 │   ├── icons/                  # App icons (PNG)
+│   ├── LIBRARY/                # PDF files (BMH_001.pdf, etc.)
 │   └── lib/                    # PDF.js for offline PDF viewing
 │       ├── pdf.min.js
 │       └── pdf.worker.min.js
 ├── scripts/
 │   └── generate_library_json.py # PDF catalog generator
-└── LIBRARY/                     # PDF files (BMH_001.pdf, etc.)
 ```
 
 ## Common Tasks
@@ -80,7 +80,7 @@ git push origin main
 ### Adding a new PDF
 1. Place PDF in `LIBRARY/` folder with naming convention `BMH_XXX.pdf`
 2. Run: `python3 scripts/generate_library_json.py`
-3. Commit both the PDF and the updated `pwa/library.json`
+3. Commit both the PDF and the updated `docs/library.json`
 
 ### Testing Changes
 1. Serve the project from root:

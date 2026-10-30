@@ -12,8 +12,8 @@ import re
 import subprocess
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-LIB_DIR = os.path.join(ROOT, 'LIBRARY')
-OUTPUT = os.path.join(ROOT, 'pwa', 'library.json')
+LIB_DIR = os.path.join(ROOT, 'docs', 'LIBRARY')
+OUTPUT = os.path.join(ROOT, 'docs', 'library.json')
 
 CATEGORY_RULES = [
     ('biblia', ['biblia', 'reina', 'renia', 'diccionario', 'comentario', 'biblico', 'biblical']),
@@ -58,7 +58,7 @@ def main() -> None:
         category = choose_category(title)
         item = {
             'id': os.path.splitext(filename)[0],
-            'file': f'/LIBRARY/{filename}',
+            'file': f'LIBRARY/{filename}',
             'title': title,
             'category': category,
             'excerpt': '',
