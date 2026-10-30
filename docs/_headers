@@ -1,0 +1,8 @@
+/LIBRARY/*.pdf
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
+  Content-Type: application/pdf
+
+/*
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff

@@ -188,8 +188,11 @@ function isValidPdfUrl(url) {
 }
 
 async function loadPDF(url) {
+  // Construir URL absoluta relativa al origen para evitar problemas de rutas relativas
+  const pdfUrl = url.startsWith('http') ? url : new URL(url, window.location.origin).href;
+  
   try {
-    const loadingTask = pdfjsLib.getDocument(url);
+    const loadingTask = pdfjsLib.getDocument(pdfUrl);
     pdfDoc = await loadingTask.promise;
     
     $('#pdf-loading').hidden = true;
@@ -203,6 +206,7 @@ async function loadPDF(url) {
     $('#pdf-loading').hidden = true;
     $('#pdf-error').hidden = false;
     $('#pdf-controls').hidden = true;
+    $('#pdf-error').textContent = 'Error al cargar el PDF. Asegúrate de tener conexión a internet o intenta más tarde.';
   }
 }
 
