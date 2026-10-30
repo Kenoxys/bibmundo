@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bibmundo-cache-v2';
+const CACHE_NAME = 'bibmundo-cache-v4';
 
 // La app usa rutas relativas
 const BASE = './';

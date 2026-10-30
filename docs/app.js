@@ -189,7 +189,7 @@ function isValidPdfUrl(url) {
 
 async function loadPDF(url) {
   // Construir URL absoluta relativa al origen para evitar problemas de rutas relativas
-  const pdfUrl = url.startsWith('http') ? url : new URL(url, window.location.origin).href;
+  const pdfUrl = url.startsWith('http') ? url : new URL(url, window.location.href).href;
   
   try {
     const loadingTask = pdfjsLib.getDocument(pdfUrl);
